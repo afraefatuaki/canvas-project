@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;300;&display=swap');
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+$font-type: 'Open Sans', sans-serif;
+$gray: #f7f7f7;
+/*----------------------------------------
+    Header 
+----------------------------------------*/
+
+header{ 
+    background: url('../img/titel-bild.jpg') center/cover no-repeat;
+    height: 100vh;
+    p{
+        color: #fff;
+        text-align: center;
+        padding-top: 25%;
+        margin: 0px;
+        font-size: 3em;
+        word-spacing: 10px;
+        span{
+            font-family: $font-type;
+            font-weight: 700;
+        }
+    }
+}
+
+/*----------------------------------------
+    Main 
+----------------------------------------*/
+main{
+    background: $gray;
+   
+     h2{
+         background-color:$gray;
+        padding-bottom: 1%;
+        margin-bottom: 0px;
+        width: 100vw;
+        text-align: right;
+        padding-top: 1%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    
+   
+}
+
+/*----------------------------------------
+    Section 01
+----------------------------------------*/
+
+@mixin center{
+    text-align: center;
+    padding-top: 10%;
+    h1{
+        font-size: 2em;
+    }
+
+}
+.greatIdeas{
+    @include center;
+    padding-bottom: 10%;
+    span{
+        color: rgb(65, 197, 241),
+    }
+}
+
+.greatIdeas + div{
+    padding-left: 4%;
+    img{
+        height: 50vh;
+    }
+}
+
+/*----------------------------------------
+    Section 02
+----------------------------------------*/
+
+.meetTheArtist{
+    @include center;
+    padding-bottom: 5%;
+}
+
+.Galerie{
+    img{
+        height: 50vh;
+        padding: 0 0 3% 2%;
+    }
+    .this{
+        padding-left: 4%;
+    }
+    article{
+        text-align: center;
+        padding-bottom: 5%;
+    }
+}
+
+/*----------------------------------------
+    Footer
+----------------------------------------*/
+
+footer{
+    h1{
+        @include center;
+        font-size: 3em;
+    }
+}
+
+.google{
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 10%;
+    .theArt{
+
+    }
+}
