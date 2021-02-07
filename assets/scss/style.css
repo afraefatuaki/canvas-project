@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;300;&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -8,13 +12,14 @@ body {
     Header 
 ----------------------------------------*/
 header {
-  background: url("../img/titel-bild.jpg") center/cover no-repeat;
+  background: url("../img/titel-bild.jpg") center/contain no-repeat;
   height: 100vh;
+  background-color: #f7f7f7;
+  text-align: center;
 }
 
 header p {
   color: #fff;
-  text-align: center;
   padding-top: 25%;
   margin: 0px;
   font-size: 3em;
@@ -24,6 +29,10 @@ header p {
 header p span {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
+}
+
+header img {
+  padding-top: 12%;
 }
 
 /*----------------------------------------
@@ -41,6 +50,7 @@ main h2 {
   text-align: right;
   padding-top: 1%;
   position: fixed;
+  z-index: 1;
   bottom: 0;
   right: 0;
 }
@@ -121,5 +131,9 @@ footer h1 h1 {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-bottom: 10%;
+}
+
+.hbspt-form {
+  padding-left: 8%;
 }
 /*# sourceMappingURL=style.css.map */

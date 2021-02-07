@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>canvas-project</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,6 +14,7 @@
     <header>
 
         <p>Introducing <span> The Canvas Project </span>for Hangouts Meet</p>
+        <a href="#ideas"><img src="assets/img/scroll-arrow.png" alt="arrow"></a>
 
 
     </header>
@@ -27,7 +29,8 @@
                 <h2>The camvas Project</h2>
             </div>
 
-            <div class="greatIdeas">
+            <div data-aos="fade-up" id="ideas" class="greatIdeas">
+
 
                 <h1>Great ideas happen when we come together</h1>
                 <p>We worked with artists to create unique works of art that visualize collaboration and the <br>great
@@ -38,7 +41,7 @@
                     set the backdrop for your next get-together over <span> Hangouts Meet</span>.</p>
             </div>
 
-            <div>
+            <div data-aos="fade-up">
 
                 <img src="assets/img/img_1.png" alt="" />
                 <img src="assets/img/img_2.png" alt="" />
@@ -51,7 +54,7 @@
         <!-- Start Section 02-->
         <section>
 
-            <div class="meetTheArtist">
+            <div data-aos="fade-up" class="meetTheArtist">
 
                 <h1>Meet the artists</h1>
                 <p>Influenced by the power of collaboration and connection these artists created both <br> photographic
@@ -65,26 +68,28 @@
         <!-- End Section 02-->
 
         <!-- Start Section 03-->
-        <section class="Galerie">
+        <section data-aos="fade-up" class="Galerie">
+
 
             <img src="assets/img/img_3.jpg" alt="" class="this" />
             <img src="assets/img/img_4.jpg" alt="" />
-            <img src="assets/img/img_5.jpg" alt="" class="this" />
-            <img src="assets/img/img_6.jpg" alt="" />
-            <img src="assets/img/img_7.jpg" alt="" class="this" />
-            <img src="assets/img/img_8.jpg" alt="" />
-            <img src="assets/img/img_9.jpg" alt="" class="this" />
-            <img src="assets/img/img_10.png" alt="" />
-            <article>
+            <img data-aos="fade-up" delay="300" src="assets/img/img_5.jpg" alt="" class="this" />
+            <img data-aos="fade-up" delay="300" src="assets/img/img_6.jpg" alt="" />
+            <img data-aos="fade-up" delay="400" src="assets/img/img_7.jpg" alt="" class="this" />
+            <img data-aos="fade-up" delay="400" src="assets/img/img_8.jpg" alt="" />
+            <img data-aos="fade-up" delay="500" src="assets/img/img_9.jpg" alt="" class="this" />
+            <img data-aos="fade-up" delay="500" src="assets/img/img_10.png" alt="" />
+            <article data-aos="fade-up">
                 <img src="assets/img/img_11.png" alt="" />
             </article>
+
 
         </section>
     </main>
     <!-- ========== END MAIN ========== -->
 
     <!-- ========== START FOOTER ========== -->
-    <footer>
+    <footer data-aos="fade-up">
 
         <h1>We’ll be collaborating with more artists,<br> so check back for new artworks.</h1>
         <div class="google">
@@ -103,12 +108,17 @@
 
     </footer>
     <!-- ========== END FOOTER ========== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
     <script>
         hbspt.forms.create({
-            portalId: "9341932",
-            formId: "9f3ba439-3429-4378-abdb-91028fbf178a"
+            portalId: "9357721",
+            formId: "40a3d6e0-b217-437e-ad3a-052a28ac8ec9"
         });
     </script>
 

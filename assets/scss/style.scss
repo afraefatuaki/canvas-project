@@ -2,7 +2,9 @@
 
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Roboto', sans-serif;
-
+html{
+    scroll-behavior: smooth
+}
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -14,11 +16,12 @@ $gray: #f7f7f7;
 ----------------------------------------*/
 
 header{ 
-    background: url('../img/titel-bild.jpg') center/cover no-repeat;
+    background: url('../img/titel-bild.jpg') center/contain no-repeat;
     height: 100vh;
+    background-color: $gray;
+    text-align: center;
     p{
         color: #fff;
-        text-align: center;
         padding-top: 25%;
         margin: 0px;
         font-size: 3em;
@@ -28,6 +31,11 @@ header{
             font-weight: 700;
         }
     }
+    img{
+        padding-top: 12%;
+    }
+   
+    
 }
 
 /*----------------------------------------
@@ -44,6 +52,7 @@ main{
         text-align: right;
         padding-top: 1%;
         position: fixed;
+        z-index: 1;
         bottom: 0;
         right: 0;
     }
@@ -123,3 +132,8 @@ footer{
 
     }
 }
+.hbspt-form{
+    padding-left: 8%;
+}
+
+

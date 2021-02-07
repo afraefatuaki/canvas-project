@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;300;&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -8,22 +12,24 @@ body {
     Header 
 ----------------------------------------*/
 header {
-  background: url("../img/titel-bild.jpg") center/cover no-repeat;
+  background: url("../img/titel-bild.jpg") center/contain no-repeat;
   height: 100vh;
+  background-color: #f7f7f7;
+  text-align: center;
 }
-
 header p {
   color: #fff;
-  text-align: center;
   padding-top: 25%;
   margin: 0px;
   font-size: 3em;
   word-spacing: 10px;
 }
-
 header p span {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
+}
+header img {
+  padding-top: 12%;
 }
 
 /*----------------------------------------
@@ -32,7 +38,6 @@ header p span {
 main {
   background: #f7f7f7;
 }
-
 main h2 {
   background-color: #f7f7f7;
   padding-bottom: 1%;
@@ -41,6 +46,7 @@ main h2 {
   text-align: right;
   padding-top: 1%;
   position: fixed;
+  z-index: 1;
   bottom: 0;
   right: 0;
 }
@@ -53,11 +59,9 @@ main h2 {
   padding-top: 10%;
   padding-bottom: 10%;
 }
-
 .greatIdeas h1 {
   font-size: 2em;
 }
-
 .greatIdeas span {
   color: #41c5f1;
 }
@@ -65,7 +69,6 @@ main h2 {
 .greatIdeas + div {
   padding-left: 4%;
 }
-
 .greatIdeas + div img {
   height: 50vh;
 }
@@ -78,7 +81,6 @@ main h2 {
   padding-top: 10%;
   padding-bottom: 5%;
 }
-
 .meetTheArtist h1 {
   font-size: 2em;
 }
@@ -87,11 +89,9 @@ main h2 {
   height: 50vh;
   padding: 0 0 3% 2%;
 }
-
 .Galerie .this {
   padding-left: 4%;
 }
-
 .Galerie article {
   text-align: center;
   padding-bottom: 5%;
@@ -105,24 +105,19 @@ footer h1 {
   padding-top: 10%;
   font-size: 3em;
 }
-
 footer h1 h1 {
   font-size: 2em;
 }
 
 .google {
   padding-top: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
   align-items: baseline;
   margin-bottom: 10%;
 }
-
-/*# sourceMappingURL=style.css.map */
+.hbspt-form {
+  padding-left: 8%;
+}
 
 /*# sourceMappingURL=main.css.map */
